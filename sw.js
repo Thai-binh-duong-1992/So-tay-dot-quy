@@ -1,5 +1,5 @@
 // Sổ tay xử trí đột quỵ – đọc offline
-const CACHE = 'sotay-dotquy-v2';
+const CACHE = 'sotay-dotquy-v3';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
